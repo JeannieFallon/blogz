@@ -12,9 +12,13 @@
                 <li><a href="/">home</a></li>
                 <li><a href="/blog">all posts</a></li>
                 <li><a href="/blog/newpost">new post</a></li>
+                <li><a href="/login">log in</a></li>
+                <li><a href="/blog">log out</a></li>
             </ul>
         </nav>
         {% block content %}
+        {% endblock %}
+        {% block login %}
         {% endblock %}
     </body>
 </html>

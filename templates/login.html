@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block login %}
+
+<form method="post">
+  <input type="text" name="username" value="{{ username }}" required>
+  <input type="password" name="password" value="{{ password }}" required>
+  <input type="submit">
+  <span class="error"> {{ error }} </span>
+</form>
+
+
+{% endblock %}

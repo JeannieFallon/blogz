@@ -26,6 +26,8 @@
     {% endif %}
 {% endif %}
 
+<!-- Why are there two discrete if-clauses rather than a singular, chained elif? -->
+
 {% if not username %}
     {% if prev_page %}
     <a href="/blog?page={{ prev_page }}">&lt; prev</a>
